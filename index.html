@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flowers</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="not-loaded">
+  <div class="sun"></div>
+  <div class="night"></div>
+
+  <!-- Headline (MAIN PAGE) -->
+  <div class="headline">
+    <h1>So many flowers but my favourtite one is you hehe🤭</h1>
+    <button class="letter-btn" id="letterBtn">Open Special Letter 💌</button>
+    <button class="gift-btn" id="giftBtn">🎁 Reveal Gift 🎁</button>
+  </div>
+
+  <!-- Letter Modal -->
+  <div class="letter-modal" id="letterModal">
+    <div class="letter-overlay"></div>
+    <div class="letter-container">
+      <div class="letter">
+        <div class="letter-header">
+          <h2>A Special Letter For You</h2>
+          <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+        <div class="letter-content">
+          <div class="photo-container">
+            <div class="photo-frame">
+              <img src="./37a6bcec79d7ebd088a5209463ff00e5.jpg" alt="Special Memory" class="letter-photo">
+            </div>
+          </div>
+          <div class="letter-text">
+            <p>My Dearest,</p>
+            <p>Like these beautiful flowers that bloom with time and care, I hope our connection grows more beautiful each day. You bring color to my world just like these vibrant petals bring life to the garden. I hope that someday you feel the same way I do.</p>
+            <p>We haven't had many moments together, But every little moment I had with you was like watching a flower bloom magical, precious, and filled with wonder. Thank you for being the sunshine in my life &lt;3.</p>
+            <p class="signature">With all my love,<br>Someone who admires you alot 💕,<br>~V</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gift Modal (SEPARATE, not inside letter modal) -->
+  <div id="giftOverlay" class="gift-overlay">
+    <div id="giftModal" class="gift-modal">
+      <div class="gift-header">
+        <h2>Here's Your Special Gift! 🎉</h2>
+        <button class="close-gift-btn" id="closeGiftBtn">&times;</button>
+      </div>
+      <div class="gift-content">
+        <audio id="giftAudio" loop>
+          <source src="./music.mp3" type="audio/mpeg">
+        </audio>
+        <img
+          id="giftGif"
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9xcDBzZHh5dHlwN2p3YjgxbHozM2VldDhxMnB5c3gwa2Mydm9yNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/mBdYXqJHVk4jHfBQtl/giphy.gif"
+          alt="Celebration GIF"
+          class="gift-animation"
+        >
+        <p class="gift-message">I didn't have the courage to give it to you irl, but I hope one day I will.</p>
+        <p class="gift-message">Here's your special gift.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flowers / Background -->
+  <div class="flowers">
+    <div class="flower flower--1">
+      <div class="flower__leafs flower__leafs--1">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+        <div class="flower__line__leaf flower__line__leaf--5"></div>
+        <div class="flower__line__leaf flower__line__leaf--6"></div>
+      </div>
+    </div>
+
+    <div class="flower flower--2">
+      <div class="flower__leafs flower__leafs--2">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
+
+    <div class="flower flower--3">
+      <div class="flower__leafs flower__leafs--3">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
+
+    <!-- The rest of your grass / long-g blocks unchanged -->
+    <!-- ... (you can keep the same code you already have) ... -->
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
